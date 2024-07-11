@@ -20,20 +20,16 @@ const personSchema=new mongoose.Schema({
     email:{
         type:String,
         required:true,
-        unique:true
     },
     address:{
         type:String
-    },
-    salary:{
-        type:Number,
-        required:true
-    },
+    }
+   
 })
 
 
 // create Person Model
-const Person=mongoose.model('Person', personSchema)
+const Person=mongoose.model('Persons', personSchema)
 module.exports=Person
 
 
